@@ -1,0 +1,10 @@
+body { margin:0; font-family: Arial, sans-serif; background:#000; color:#fff; }
+.hidden { display:none; }
+#login, #app, #playerContainer { padding: 20px; }
+input, button { padding: 10px; margin: 5px 0; width: 100%; }
+.grid { display: flex; flex-wrap: wrap; gap: 10px; }
+.item { background:#111; padding: 10px; width: 150px; cursor:pointer; border-radius:8px; }
+.item img { width: 100%; border-radius:6px; }
+video { width: 100%; height: auto; background: #000; max-height: 70vh; }
+.controls { display:flex; justify-content:space-around; margin-top:10px; }
+#info { color: orange; text-align:center; margin-top:5px; }

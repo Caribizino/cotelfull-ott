@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COTEL OTT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login">
+    <h2>Iniciar Sesión</h2>
+    <input type="text" id="user" placeholder="Usuario">
+    <input type="password" id="pass" placeholder="Contraseña">
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <div id="app" class="hidden">
+    <h2>Canales en Vivo</h2>
+    <div id="live" class="grid"></div>
+    <h2>Películas</h2>
+    <div id="movies" class="grid"></div>
+    <h2>Series</h2>
+    <div id="series" class="grid"></div>
+    <div id="seasons" class="hidden"></div>
+    <div id="episodes" class="hidden"></div>
+  </div>
+
+  <div id="playerContainer" class="hidden">
+    <video id="videoPlayer" controls autoplay></video>
+    <div id="info"></div>
+    <div class="controls">
+      <button onclick="prevContent()">Anterior</button>
+      <button onclick="toggleFullscreen()">Pantalla Completa</button>
+      <button onclick="nextContent()">Siguiente</button>
+      <button onclick="toggleMute()">Volumen</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="app.js"></script>
+</body>
+</html>
